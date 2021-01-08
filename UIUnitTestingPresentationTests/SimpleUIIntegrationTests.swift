@@ -40,11 +40,8 @@ class SimpleUIIntegrationTests: XCTestCase {
     }
         
     private func makeSUT() -> (sut: SimpleViewController, loader: LoaderSpy) {
-        let bundle = Bundle(for: SimpleViewController.self)
-        let sb = UIStoryboard(name: "Simple", bundle: bundle)
-        let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
         let loader = LoaderSpy()
-        sut.viewModel = SimpleViewModel(loader: loader)
+        let sut = SimpleUIComposer.compose(with: loader)
         return (sut, loader)
     }
     

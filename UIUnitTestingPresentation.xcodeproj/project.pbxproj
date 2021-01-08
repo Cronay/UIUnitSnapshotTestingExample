@@ -16,6 +16,7 @@
 		C13BFBBF25A862BA00D13912 /* SimpleUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBBE25A862BA00D13912 /* SimpleUIIntegrationTests.swift */; };
 		C13BFBC725A8630E00D13912 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBC625A8630E00D13912 /* SimpleViewController.swift */; };
 		C13BFBCC25A8635500D13912 /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFBCB25A8635500D13912 /* Simple.storyboard */; };
+		C13BFBDA25A872E400D13912 /* SimpleUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBD925A872E400D13912 /* SimpleUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C13BFBBE25A862BA00D13912 /* SimpleUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIIntegrationTests.swift; sourceTree = "<group>"; };
 		C13BFBC625A8630E00D13912 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		C13BFBCB25A8635500D13912 /* Simple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
+		C13BFBD925A872E400D13912 /* SimpleUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C13BFB9625A8614400D13912 /* Info.plist */,
 				C13BFBC625A8630E00D13912 /* SimpleViewController.swift */,
 				C13BFBCB25A8635500D13912 /* Simple.storyboard */,
+				C13BFBD925A872E400D13912 /* SimpleUIComposer.swift */,
 			);
 			path = UIUnitTestingPresentation;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13BFB8925A8614300D13912 /* AppDelegate.swift in Sources */,
+				C13BFBDA25A872E400D13912 /* SimpleUIComposer.swift in Sources */,
 				C13BFB8B25A8614300D13912 /* SceneDelegate.swift in Sources */,
 				C13BFBC725A8630E00D13912 /* SimpleViewController.swift in Sources */,
 			);

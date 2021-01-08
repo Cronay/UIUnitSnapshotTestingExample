@@ -17,12 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let bundle = Bundle(for: SimpleViewController.self)
-        let sb = UIStoryboard(name: "Simple", bundle: bundle)
-        let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
-        let loader = Loader()
-        sut.viewModel = SimpleViewModel(loader: loader)
-        window?.rootViewController = sut
+        window?.rootViewController = SimpleUIComposer.compose(with: Loader())
         window?.makeKeyAndVisible()
     }
 
