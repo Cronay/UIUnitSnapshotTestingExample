@@ -7,6 +7,6 @@
 
 import UIKit
 
-class SimpleViewController: UIViewController {
-    
+public class SimpleViewController: UIViewController {
+    @IBOutlet public private(set) var button: UIButton?
 }
