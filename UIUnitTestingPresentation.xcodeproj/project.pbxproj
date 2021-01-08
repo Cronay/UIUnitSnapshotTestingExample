@@ -13,7 +13,7 @@
 		C13BFB9225A8614400D13912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB9125A8614400D13912 /* Assets.xcassets */; };
 		C13BFB9525A8614400D13912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB9325A8614400D13912 /* LaunchScreen.storyboard */; };
 		C13BFBAB25A8614400D13912 /* UIUnitTestingPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBAA25A8614400D13912 /* UIUnitTestingPresentationUITests.swift */; };
-		C13BFBBF25A862BA00D13912 /* SimpleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */; };
+		C13BFBBF25A862BA00D13912 /* SimpleUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBBE25A862BA00D13912 /* SimpleUIIntegrationTests.swift */; };
 		C13BFBC725A8630E00D13912 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBC625A8630E00D13912 /* SimpleViewController.swift */; };
 		C13BFBCC25A8635500D13912 /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFBCB25A8635500D13912 /* Simple.storyboard */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 		C13BFBA625A8614400D13912 /* UIUnitTestingPresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIUnitTestingPresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13BFBAA25A8614400D13912 /* UIUnitTestingPresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUnitTestingPresentationUITests.swift; sourceTree = "<group>"; };
 		C13BFBAC25A8614400D13912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewControllerTests.swift; sourceTree = "<group>"; };
+		C13BFBBE25A862BA00D13912 /* SimpleUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIIntegrationTests.swift; sourceTree = "<group>"; };
 		C13BFBC625A8630E00D13912 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		C13BFBCB25A8635500D13912 /* Simple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C13BFBA125A8614400D13912 /* Info.plist */,
-				C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */,
+				C13BFBBE25A862BA00D13912 /* SimpleUIIntegrationTests.swift */,
 			);
 			path = UIUnitTestingPresentationTests;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13BFBBF25A862BA00D13912 /* SimpleViewControllerTests.swift in Sources */,
+				C13BFBBF25A862BA00D13912 /* SimpleUIIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

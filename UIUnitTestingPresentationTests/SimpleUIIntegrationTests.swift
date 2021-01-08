@@ -8,7 +8,7 @@
 import XCTest
 import UIUnitTestingPresentation
 
-class SimpleViewControllerTests: XCTestCase {
+class SimpleUIIntegrationTests: XCTestCase {
 
     // sut = system under test
     
