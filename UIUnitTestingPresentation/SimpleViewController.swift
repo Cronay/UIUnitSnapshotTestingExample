@@ -7,20 +7,30 @@
 
 import UIKit
 
+public protocol TextLoader {
+    func load(completion: @escaping (String) -> Void)
+}
+
 public class SimpleViewModel {
-    public init() {}
+    private let loader: TextLoader
+    
+    public init(loader: TextLoader) {
+        self.loader = loader
+    }
     
     var textChangeObserver: ((String) -> Void)?
     
     func textChangeRequested() {
-        textChangeObserver?("Check24")
+        loader.load { [weak self] text in
+            self?.textChangeObserver?(text)
+        }
     }
 }
 
 public class SimpleViewController: UIViewController {
     @IBOutlet public private(set) var button: UIButton?
     @IBOutlet public private(set) var textLabel: UILabel?
-    
+
     public var viewModel: SimpleViewModel? {
         didSet {
             bindViewWithViewModel()
@@ -29,6 +39,7 @@ public class SimpleViewController: UIViewController {
     
     public override func viewDidLoad() {
         button?.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        textLabel?.text = nil
     }
     
     @objc func buttonTapped() {
