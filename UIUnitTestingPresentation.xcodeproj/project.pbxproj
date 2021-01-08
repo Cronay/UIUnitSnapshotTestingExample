@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		C13BFB8925A8614300D13912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB8825A8614300D13912 /* AppDelegate.swift */; };
 		C13BFB8B25A8614300D13912 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB8A25A8614300D13912 /* SceneDelegate.swift */; };
-		C13BFB8D25A8614300D13912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB8C25A8614300D13912 /* ViewController.swift */; };
 		C13BFB9025A8614300D13912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB8E25A8614300D13912 /* Main.storyboard */; };
 		C13BFB9225A8614400D13912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB9125A8614400D13912 /* Assets.xcassets */; };
 		C13BFB9525A8614400D13912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB9325A8614400D13912 /* LaunchScreen.storyboard */; };
-		C13BFBA025A8614400D13912 /* UIUnitTestingPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB9F25A8614400D13912 /* UIUnitTestingPresentationTests.swift */; };
 		C13BFBAB25A8614400D13912 /* UIUnitTestingPresentationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBAA25A8614400D13912 /* UIUnitTestingPresentationUITests.swift */; };
+		C13BFBBF25A862BA00D13912 /* SimpleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */; };
+		C13BFBC725A8630E00D13912 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFBC625A8630E00D13912 /* SimpleViewController.swift */; };
+		C13BFBCC25A8635500D13912 /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFBCB25A8635500D13912 /* Simple.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +39,18 @@
 		C13BFB8525A8614300D13912 /* UIUnitTestingPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIUnitTestingPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13BFB8825A8614300D13912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C13BFB8A25A8614300D13912 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C13BFB8C25A8614300D13912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C13BFB8F25A8614300D13912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C13BFB9125A8614400D13912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C13BFB9425A8614400D13912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C13BFB9625A8614400D13912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13BFB9B25A8614400D13912 /* UIUnitTestingPresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIUnitTestingPresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C13BFB9F25A8614400D13912 /* UIUnitTestingPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUnitTestingPresentationTests.swift; sourceTree = "<group>"; };
 		C13BFBA125A8614400D13912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C13BFBA625A8614400D13912 /* UIUnitTestingPresentationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIUnitTestingPresentationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13BFBAA25A8614400D13912 /* UIUnitTestingPresentationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUnitTestingPresentationUITests.swift; sourceTree = "<group>"; };
 		C13BFBAC25A8614400D13912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewControllerTests.swift; sourceTree = "<group>"; };
+		C13BFBC625A8630E00D13912 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		C13BFBCB25A8635500D13912 /* Simple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				C13BFB8825A8614300D13912 /* AppDelegate.swift */,
 				C13BFB8A25A8614300D13912 /* SceneDelegate.swift */,
-				C13BFB8C25A8614300D13912 /* ViewController.swift */,
 				C13BFB8E25A8614300D13912 /* Main.storyboard */,
 				C13BFB9125A8614400D13912 /* Assets.xcassets */,
 				C13BFB9325A8614400D13912 /* LaunchScreen.storyboard */,
 				C13BFB9625A8614400D13912 /* Info.plist */,
+				C13BFBC625A8630E00D13912 /* SimpleViewController.swift */,
+				C13BFBCB25A8635500D13912 /* Simple.storyboard */,
 			);
 			path = UIUnitTestingPresentation;
 			sourceTree = "<group>";
@@ -113,8 +116,8 @@
 		C13BFB9E25A8614400D13912 /* UIUnitTestingPresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				C13BFB9F25A8614400D13912 /* UIUnitTestingPresentationTests.swift */,
 				C13BFBA125A8614400D13912 /* Info.plist */,
+				C13BFBBE25A862BA00D13912 /* SimpleViewControllerTests.swift */,
 			);
 			path = UIUnitTestingPresentationTests;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 					};
 					C13BFB9A25A8614400D13912 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 						TestTargetID = C13BFB8425A8614300D13912;
 					};
 					C13BFBA525A8614400D13912 = {
@@ -232,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13BFB9525A8614400D13912 /* LaunchScreen.storyboard in Resources */,
+				C13BFBCC25A8635500D13912 /* Simple.storyboard in Resources */,
 				C13BFB9225A8614400D13912 /* Assets.xcassets in Resources */,
 				C13BFB9025A8614300D13912 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13BFB8D25A8614300D13912 /* ViewController.swift in Sources */,
 				C13BFB8925A8614300D13912 /* AppDelegate.swift in Sources */,
 				C13BFB8B25A8614300D13912 /* SceneDelegate.swift in Sources */,
+				C13BFBC725A8630E00D13912 /* SimpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13BFBA025A8614400D13912 /* UIUnitTestingPresentationTests.swift in Sources */,
+				C13BFBBF25A862BA00D13912 /* SimpleViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +479,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K9B5HAHGA;
 				INFOPLIST_FILE = UIUnitTestingPresentationTests/Info.plist;
@@ -485,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.check24.UIUnitTestingPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIUnitTestingPresentation.app/UIUnitTestingPresentation";
@@ -496,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6K9B5HAHGA;
 				INFOPLIST_FILE = UIUnitTestingPresentationTests/Info.plist;
