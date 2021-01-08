@@ -9,4 +9,5 @@ import UIKit
 
 public class SimpleViewController: UIViewController {
     @IBOutlet public private(set) var button: UIButton?
+    @IBOutlet public private(set) var textLabel: UILabel?
 }

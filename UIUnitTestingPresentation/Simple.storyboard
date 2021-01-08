@@ -20,16 +20,25 @@
                                 <rect key="frame" x="184" y="333" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1P-Wh-T2q">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="djF-Mg-rsa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OBi-md-qZz" firstAttribute="centerX" secondItem="VKA-qJ-Xis" secondAttribute="centerX" id="1pP-3i-1ax"/>
                             <constraint firstItem="OBi-md-qZz" firstAttribute="centerY" secondItem="VKA-qJ-Xis" secondAttribute="centerY" constant="-100" id="myn-op-JlQ"/>
+                            <constraint firstItem="C1P-Wh-T2q" firstAttribute="centerX" secondItem="VKA-qJ-Xis" secondAttribute="centerX" id="pI5-FT-O9P"/>
+                            <constraint firstItem="C1P-Wh-T2q" firstAttribute="centerY" secondItem="VKA-qJ-Xis" secondAttribute="centerY" id="uqe-zn-P3I"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="OBi-md-qZz" id="MZq-eW-AZT"/>
+                        <outlet property="textLabel" destination="C1P-Wh-T2q" id="gcX-qS-k5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZDk-A1-r35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

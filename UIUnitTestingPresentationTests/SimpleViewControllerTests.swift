@@ -20,4 +20,13 @@ class SimpleViewControllerTests: XCTestCase {
         
         XCTAssertNotNil(sut.button)
     }
+    
+    func test_textLabel_isConnected() {
+        let bundle = Bundle(for: SimpleViewController.self)
+        let sb = UIStoryboard(name: "Simple", bundle: bundle)
+        let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
+        sut.loadViewIfNeeded()
+
+        XCTAssertNotNil(sut.textLabel)
+    }
 }
