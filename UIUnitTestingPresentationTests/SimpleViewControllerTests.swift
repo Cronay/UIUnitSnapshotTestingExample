@@ -25,11 +25,26 @@ class SimpleViewControllerTests: XCTestCase {
 
         XCTAssertNotNil(sut.textLabel)
     }
+    
+    func test_buttonTap_changesTextOnLabel() {
+        let sut = makeSUT()
+        sut.loadViewIfNeeded()
+        
+        sut.button?.simulateTap()
+        
+        XCTAssertEqual(sut.textLabel?.text, "Check24")
+    }
         
     private func makeSUT() -> SimpleViewController {
         let bundle = Bundle(for: SimpleViewController.self)
         let sb = UIStoryboard(name: "Simple", bundle: bundle)
         let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
         return sut
+    }
+}
+
+extension UIButton {
+    func simulateTap() {
+        self.sendActions(for: .touchUpInside)
     }
 }
