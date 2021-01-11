@@ -11,12 +11,7 @@ import XCTest
 class UIUnitTestingPresentationSnapshotTests: XCTestCase {
 
     func test_simpleUI() {
-        let bundle = Bundle(for: SimpleViewController.self)
-        let sb = UIStoryboard(name: "Simple", bundle: bundle)
-        let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
-        sut.loadViewIfNeeded()
-        let viewModel = SnapshotViewModel()
-        sut.viewModel = viewModel
+        let (sut, viewModel) = makeSUT()
         
         viewModel.setText(to: "This is a text")
         
@@ -25,6 +20,17 @@ class UIUnitTestingPresentationSnapshotTests: XCTestCase {
     }
 
     // MARK: - Helpers
+    
+    private func makeSUT() -> (sut: SimpleViewController, viewModel: SnapshotViewModel) {
+        let bundle = Bundle(for: SimpleViewController.self)
+        let sb = UIStoryboard(name: "Simple", bundle: bundle)
+        let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
+        sut.loadViewIfNeeded()
+        let viewModel = SnapshotViewModel()
+        sut.viewModel = viewModel
+
+        return (sut, viewModel)
+    }
     
     private class SnapshotViewModel: SimpleViewModel {
         private class NullLoader: TextLoader {
