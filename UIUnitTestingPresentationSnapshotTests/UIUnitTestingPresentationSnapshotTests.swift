@@ -11,9 +11,9 @@ import XCTest
 class UIUnitTestingPresentationSnapshotTests: XCTestCase {
 
     func test_simpleUI() {
-        let (sut, viewModel) = makeSUT()
+        let sut = makeSUT()
         
-        viewModel.setText(to: "This is a text")
+        sut.textLabel?.text = "This is a text"
         
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .light)), named: "SIMPLEUI_light")
         assert(snapshot: sut.snapshot(for: .iPhone8(style: .dark)), named: "SIMPLEUI_dark")
@@ -21,31 +21,15 @@ class UIUnitTestingPresentationSnapshotTests: XCTestCase {
 
     // MARK: - Helpers
     
-    private func makeSUT() -> (sut: SimpleViewController, viewModel: SnapshotViewModel) {
+    private func makeSUT() -> SimpleViewController {
         let bundle = Bundle(for: SimpleViewController.self)
         let sb = UIStoryboard(name: "Simple", bundle: bundle)
         let sut: SimpleViewController = sb.instantiateViewController(identifier: String(describing: SimpleViewController.self))
         sut.loadViewIfNeeded()
-        let viewModel = SnapshotViewModel()
-        sut.viewModel = viewModel
 
-        return (sut, viewModel)
+        return sut
     }
-    
-    private class SnapshotViewModel: SimpleViewModel {
-        private class NullLoader: TextLoader {
-            func load(completion: @escaping (String) -> Void) {}
-        }
         
-        init() {
-            super.init(loader: NullLoader())
-        }
-        
-        func setText(to text: String) {
-            textChangeObserver?("This is a text")
-        }
-    }
-    
     func assert(snapshot: UIImage, named name: String, file: StaticString = #filePath, line: UInt = #line) {
         let snapshotURL = makeSnapshotURL(named: name, file: file)
         let snapshotData = makeSnapshotData(for: snapshot, file: file, line: line)
