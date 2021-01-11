@@ -17,3 +17,6 @@
 - Compare screenshots of the interface with reference screenshots
 - Instantiate only UI components
 - Much faster than UI-Tests and a little bit slower than Unit-Tests
+
+
+https://www.goodreads.com/book/show/50824142-ios-unit-testing-by-example
