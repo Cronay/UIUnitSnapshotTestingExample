@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C127A64A25AC55080025088B /* Presentation.md in Resources */ = {isa = PBXBuildFile; fileRef = C127A64925AC55080025088B /* Presentation.md */; };
 		C13BFB8925A8614300D13912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB8825A8614300D13912 /* AppDelegate.swift */; };
 		C13BFB8B25A8614300D13912 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13BFB8A25A8614300D13912 /* SceneDelegate.swift */; };
 		C13BFB9025A8614300D13912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C13BFB8E25A8614300D13912 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C127A64925AC55080025088B /* Presentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Presentation.md; sourceTree = "<group>"; };
 		C13BFB8525A8614300D13912 /* UIUnitTestingPresentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIUnitTestingPresentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13BFB8825A8614300D13912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C13BFB8A25A8614300D13912 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				C13BFBC625A8630E00D13912 /* SimpleViewController.swift */,
 				C13BFBCB25A8635500D13912 /* Simple.storyboard */,
 				C13BFBD925A872E400D13912 /* SimpleUIComposer.swift */,
+				C127A64925AC55080025088B /* Presentation.md */,
 			);
 			path = UIUnitTestingPresentation;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				C13BFBCC25A8635500D13912 /* Simple.storyboard in Resources */,
 				C13BFB9225A8614400D13912 /* Assets.xcassets in Resources */,
 				C13BFB9025A8614300D13912 /* Main.storyboard in Resources */,
+				C127A64A25AC55080025088B /* Presentation.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
