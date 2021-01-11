@@ -20,4 +20,5 @@ class UIUnitTestingPresentationUITests: XCTestCase {
         XCTAssertEqual(receivedText, "Check24")
     }
     
+    
 }
